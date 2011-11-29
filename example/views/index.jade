@@ -1,0 +1,13 @@
+!!! 5
+html
+  head
+  body
+    form(method="post",enctype="multipart/form-data",action="/")
+      input(type="file", name="img")
+      input(type="submit",value="Submit")
+    div#result
+    script(src='framejax.js')
+    script
+      framejax(document.forms[0], function(result) {
+        document.getElementById("result").innerHTML = result;
+      });
