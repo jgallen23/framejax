@@ -1,6 +1,6 @@
 /*!
   * framejax 
-  * v0.0.3
+  * v0.0.2
   * https://github.com/jgallen23/framejax
   * copyright JGA 2011
   * MIT License
@@ -52,6 +52,7 @@ var framejax = function(form, options, callback) {
     document.body.appendChild(iframe);
   };
   addEvent(form, 'submit', upload);
+  return upload;
 };
 
 return framejax;
