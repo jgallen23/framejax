@@ -1,6 +1,6 @@
 /*!
   * framejax 
-  * v0.0.2
+  * v0.0.3
   * https://github.com/jgallen23/framejax
   * copyright JGA 2011
   * MIT License
@@ -22,12 +22,7 @@ var addEvent = function(node, name, func) {
   }
 };
 
-var framejax = function(form, options, callback) {
-  if (typeof options === "function") {
-    callback = options;
-    options = {};
-  }
-
+var framejax = function(form, callback) {
   var upload = function() {
     var id = '__framejax__' + lastId++;
     var iframe = document.createElement('iframe');
@@ -45,14 +40,18 @@ var framejax = function(form, options, callback) {
         doc = iframe.contentDocument;
       if (iframe.contentWindow)
         doc = iframe.contentWindow.document;
-      callback(doc.body.innerText);
+      callback(doc.body.innerHTML);
     };
 
     addEvent(iframe, 'load', done);
     document.body.appendChild(iframe);
   };
   addEvent(form, 'submit', upload);
-  return upload;
+
+  return function () {
+    upload();
+    form.submit();
+  };
 };
 
 return framejax;
