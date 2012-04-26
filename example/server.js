@@ -1,12 +1,13 @@
 var express = require('express');
-var form = require('connect-form');
 var path = require('path');
 
-var app = express.createServer(
-  form({ keepExtensions: true })
-);
+var app = express.createServer();
 
-app.use(express.static(path.join(__dirname, '../lib')));
+
+app.configure(function() {
+  app.use(express.bodyParser({ uploadDir: path.join(__dirname, 'uploads'), keepExtensions: true }));
+  app.use(express.static(path.join(__dirname, '../lib')));
+});
 
 app.set("view options", {
   layout: false 
@@ -20,21 +21,8 @@ app.get('/', function(req, res) {
 });
 
 app.post('/', function(req, res) {
-  req.form.complete(function(err, fields, files){
-    if (err) {
-      next(err);
-    } else {
-      console.log(files.img);
-      res.send(files.img.path);
-    }
-  });
-
-  // We can add listeners for several form
-  // events such as "progress"
-  req.form.on('progress', function(bytesReceived, bytesExpected){
-    var percent = (bytesReceived / bytesExpected * 100) | 0;
-    process.stdout.write('Uploading: %' + percent + '\r');
-  });
+  console.log(req.files);
+  res.send(req.files.img.path);
 });
 
-app.listen(3000);
+app.listen(8001);
