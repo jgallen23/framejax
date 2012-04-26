@@ -1,7 +1,7 @@
 {
   "name": "framejax",
   "description": "a iframe ajax library for uploading files",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "homepage": "https://github.com/jgallen23/framejax",
   "author": "Greg Allen <@jgaui> (http://jga.me)",
   "repository": {
@@ -14,7 +14,7 @@
     "express": "*",
     "jade": "*"
   },
-  "main": "./dist/framejax.js",
+  "main": "./dist/jquery.framejax.js",
   "keywords": ["ender", "iframe", "ajax", "upload"]
 
 }
