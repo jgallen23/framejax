@@ -6,6 +6,7 @@ var app = express.createServer();
 
 app.configure(function() {
   app.use(express.bodyParser({ uploadDir: path.join(__dirname, 'uploads'), keepExtensions: true }));
+  app.use(express.static(path.join(__dirname, '../support')));
   app.use(express.static(path.join(__dirname, '../lib')));
 });
 

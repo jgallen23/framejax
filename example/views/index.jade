@@ -6,8 +6,11 @@ html
       input(type="file", name="img")
       input(type="submit",value="Submit")
     div#result
+    script(src='jquery.min.js')
     script(src='framejax.js')
     script
-      framejax(document.forms[0], function(result) {
-        document.getElementById("result").innerHTML = result;
-      });
+      $('form')
+        .framejax()
+        .on('complete', function(e, result) {
+          $('#result').html(result);
+        });

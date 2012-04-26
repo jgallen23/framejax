@@ -1,11 +1,9 @@
 {
   "JAVASCRIPT": {
     "DIST_DIR": "./dist",
-    "framejax": [
+    "jquery.framejax": [
       "./lib/copyright.js",
-      "./lib/amd-top.js",
-      "./lib/framejax.js",
-      "./lib/amd-bottom.js"
+      "./lib/framejax.js"
     ]
   },
   "JSHINT_OPTS": {
