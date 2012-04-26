@@ -1,4 +1,10 @@
 
+0.1.1 / 2012-04-26 
+==================
+
+  * cleanup after complete
+  * added framejaxSubmit to manually submit
+
 0.1.0 / 2012-04-26 
 ==================
 
