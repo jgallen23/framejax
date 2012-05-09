@@ -9,7 +9,7 @@
 !function($) {
   var lastId = 0;
   var createiFrame = function(id) {
-    return $('<iframe/>')
+    return $('<iframe name="'+id+'" />')
       .attr({
         id: id,
         name: id,
