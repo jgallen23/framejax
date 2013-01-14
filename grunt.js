@@ -26,7 +26,7 @@ module.exports = function(grunt) {
     },
     min: {
       dist: {
-        src: ['<banner>', 'dist/framejax.js'],
+        src: ['<banner>', 'dist/jquery.framejax.js'],
         dest: 'dist/jquery.framejax.min.js'
       }
     },
