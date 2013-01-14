@@ -1,20 +1,13 @@
 {
   "name": "framejax",
-  "description": "a iframe ajax library for uploading files",
-  "version": "0.1.2",
-  "homepage": "https://github.com/jgallen23/framejax",
-  "author": "Greg Allen <@jgaui> (http://jga.me)",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jgallen23/framejax.git"
-  },
-  "dependencies": {
-  },
+  "private": true,
+  "version": "0.0.0",
   "devDependencies": {
-    "express": "*",
-    "jade": "*"
-  },
-  "main": "./dist/jquery.framejax.js",
-  "keywords": ["ender", "iframe", "ajax", "upload"]
-
+    "mocha": "~1.7.4",
+    "grunt": "~0.3.17",
+    "grunt-reloadr": "~0.1.2",
+    "grunt-mocha": "~0.1.7",
+    "express": "~3.0.6",
+    "jade": "~0.28.1"
+  }
 }
