@@ -1,12 +1,12 @@
 /*!
-  * jquery.framejax 
-  * v0.1.1
-  * https://github.com/jgallen23/framejax
-  * copyright JGA 2012
-  * MIT License
-  */
+ * framejax - a jQuery plugin to submit data through an iFrame
+ * v0.2.0
+ * https://github.com/jgallen23/framejax
+ * copyright JGA 2013
+ * MIT License
+*/
 
-!function($) {
+(function($) {
   var lastId = 0;
   var createiFrame = function(id) {
     return $('<iframe name="'+id+'" />')
@@ -44,4 +44,4 @@
       el.on('framejaxSubmit', submit);
     });
   };
-}(window.jQuery);
+})(window.jQuery);

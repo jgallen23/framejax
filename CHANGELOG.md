@@ -1,4 +1,14 @@
 
+0.2.0 / 2013-01-14 
+==================
+
+  * [example] updated to use components and express v3
+  * [tools] simplified package.json because of component.json
+  * [tools] grunt integration
+  * [tools] added bower support
+  * [lib] changed !function with (function
+  * [example] added uploads folder
+
 0.1.2 / 2012-05-09 
 ==================
 
