@@ -1,12 +1,12 @@
 var express = require('express');
 var path = require('path');
 
-var app = express.createServer();
+var app = express();
 
 
 app.configure(function() {
   app.use(express.bodyParser({ uploadDir: path.join(__dirname, 'uploads'), keepExtensions: true }));
-  app.use(express.static(path.join(__dirname, '../support')));
+  app.use(express.static(path.join(__dirname, '../components')));
   app.use(express.static(path.join(__dirname, '../lib')));
 });
 
