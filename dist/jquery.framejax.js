@@ -1,6 +1,6 @@
 /*!
  * framejax - a jQuery plugin to submit data through an iFrame
- * v0.2.0
+ * v0.2.1
  * https://github.com/jgallen23/framejax
  * copyright JGA 2013
  * MIT License
