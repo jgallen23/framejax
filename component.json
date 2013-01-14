@@ -1,0 +1,11 @@
+{
+  "name": "framejax",
+  "description": "a jQuery plugin to submit data through an iFrame",
+  "version": "0.2.0",
+  "homepage": "https://github.com/jgallen23/framejax",
+  "license": "MIT",
+  "copyright": "JGA",
+  "dependencies": {
+    "jquery": "1.8.*"
+  }
+}
