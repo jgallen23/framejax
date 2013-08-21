@@ -1,0 +1,15 @@
+{
+  "name": "framejax",
+  "description": "jQuery plugin to submit multipart forms through an iframe",
+  "version": "0.2.1",
+  "homepage": "https://github.com/jgallen23/framejax/",
+  "license": "MIT",
+  "copyright": "Greg Allen",
+  "main": "dist/framejax.js",
+  "dependencies": {
+    "jquery": ">1.8.3"
+  },
+  "devDependencies": {
+    "assert": "*"
+  }
+}

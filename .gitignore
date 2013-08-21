@@ -1,4 +1,4 @@
 .DS_Store
 node_modules
-.monitor
-components
+bower_components
+reports

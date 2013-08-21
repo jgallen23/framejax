@@ -1,11 +1,10 @@
 /*!
- * framejax - a jQuery plugin to submit data through an iFrame
+ * framejax - jQuery plugin to submit multipart forms through an iframe
  * v0.2.1
- * https://github.com/jgallen23/framejax
- * copyright JGA 2013
+ * https://github.com/jgallen23/framejax/
+ * copyright Greg Allen 2013
  * MIT License
 */
-
 (function($) {
   var lastId = 0;
   var createiFrame = function(id) {
