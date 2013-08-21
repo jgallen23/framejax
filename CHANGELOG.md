@@ -1,4 +1,9 @@
 
+0.2.2 / 2013-08-20 
+==================
+
+  * updated to use latest grunt, changed dep version for jquery
+
 0.2.1 / 2013-01-14 
 ==================
 

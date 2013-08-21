@@ -1,6 +1,6 @@
 /*!
  * framejax - jQuery plugin to submit multipart forms through an iframe
- * v0.2.1
+ * v0.2.2
  * https://github.com/jgallen23/framejax/
  * copyright Greg Allen 2013
  * MIT License
