@@ -1,3 +1,8 @@
+0.3.0 / 2015-02-04 
+==================
+
+  * Returning body on the event and adding success
+  * Adding option to pass validator to check if submission was successful. Since the HTTP Status code can't be checked this is a very specific scenario for each case.
 
 0.2.2 / 2013-08-20 
 ==================
